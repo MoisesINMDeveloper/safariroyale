@@ -1,13 +1,3 @@
-//Tipado para percibir que recibira los input
-interface InputProps {
-  type: string;
-  name: string;
-  value?: any;
-  checked?: boolean;
-  placeholder: string;
-  className?: string;
-  [key: string]: any;
-}
 
 const Input: React.FC<InputProps> = ({
   type,

@@ -1,8 +1,3 @@
-interface ButtonProps {
-  type: 'button' | 'submit' | 'reset';
-  name: string;
-  className?: string;
-}
 
 const Button: React.FC<ButtonProps> = ({ type, name, ...rest }) => {
   return (
