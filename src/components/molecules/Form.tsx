@@ -9,6 +9,7 @@ const Form: React.FC = () => {
     { type: 'email', name: 'correo', placeholder: 'Correo Electrónico' },
     { type: 'text', name: 'identidad', placeholder: 'Cedula' },
     { type: 'text', name: 'telefono', placeholder: 'Numero de telefono' },
+    
   ];
 
   return (
@@ -25,7 +26,7 @@ const Form: React.FC = () => {
           </div>
         ))}
         <div className='flex flex-wrap-reverse items-center justify-center'>
-          <Input className='' type='checkbox' name='verificacion' placeholder='' />
+          <Input type='checkbox' name='verificacion' placeholder='' />
           <label className='mb-4 mx-2 text-white' htmlFor='checkbox'>
             Terminos y condiciones
           </label>
