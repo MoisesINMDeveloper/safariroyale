@@ -2,7 +2,24 @@ type TextTitleProps = {
   name: string;
   className?: string;
 };
+type Field = {
+  type: string;
+  name: string;
+  placeholder: string;
+};
+type Link = {
+  text: string;
+  href: string;
+};
 
+type NavbarProps = {
+  urlsLink: Link[];
+};
+
+type FormProps = {
+  fields: Field[];
+  buttonName: string;
+};
 interface ButtonProps {
   type: "button" | "submit" | "reset";
   name: string;

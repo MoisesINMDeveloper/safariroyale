@@ -2,17 +2,25 @@
 import LogoRoyale from "../atoms/LogoRoyale";
 import TextTitle from "../atoms/Text";
 import Header from "@/components/molecules/Header";
-import FormLogin from "../molecules/FormLogin";
+import Form from "../molecules/Form";
 const LoginPage = () => {
-  const name = "Ingresar usuario";
+  const name = "Ingresar Usuario";
+  const fields = [
+    { type: "email", name: "correo", placeholder: "Correo Electrónico" },
+    { type: "password", name: "contraseña", placeholder: "Contraseña" },
+  ];
+  const urlsLink = [
+    { text: "<-", href: "/" },
+    { text: "Registro", href: "/signup" },
+  ];
   return (
     <div className="flex flex-col items-center w-screen">
-      <Header />
+      <Header urlsLink={urlsLink} />
       <div className="w-[8rem] h-[8rem] box-shadow rounded-full">
         <LogoRoyale />
       </div>
       <TextTitle name={name} />
-      <FormLogin />
+      <Form fields={fields} buttonName="Ingresar" />
     </div>
   );
 };
