@@ -2,8 +2,6 @@ import React from "react";
 import Input from "../atoms/Input";
 import Button from "../atoms/Button";
 
-
-
 const Form: React.FC<FormProps> = ({ fields, buttonName }) => {
   return (
     <div className=" flex flex-col items-center justify-center h-contain">

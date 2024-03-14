@@ -6,3 +6,4 @@ const NavItem: React.FC<NavItemProps> = ({ text, href }) => (
   </Link>
 );
 export default NavItem;
+

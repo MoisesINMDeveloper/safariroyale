@@ -19,6 +19,7 @@ type NavbarProps = {
 type FormProps = {
   fields: Field[];
   buttonName: string;
+  text?:string
 };
 interface ButtonProps {
   type: "button" | "submit" | "reset";
