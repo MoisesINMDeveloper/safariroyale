@@ -27,7 +27,7 @@ const Form: React.FC = () => {
         ))}
         <div className='flex flex-wrap-reverse items-center justify-center'>
           <Input type='checkbox' name='verificacion' placeholder='' />
-          <label className='mb-4 mx-2 text-white' htmlFor='checkbox'>
+          <label className='mb-4 mx-2 text-white text-xs' htmlFor='checkbox'>
             Terminos y condiciones
           </label>
         </div>
